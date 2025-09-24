@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card {
+  display: flex;
+  max-width: 750px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  flex: 1;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-content h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #1f2d3d;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.author-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.author-details {
+  font-size: 13px;
+  color: #333;
+}
+
+.author-details span {
+  display: block;
+  font-size: 12px;
+  color: #777;
+}
+
+.share-btn {
+  background: #eef2f6;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.share-btn:hover {
+  background: #dbe2eb;
+}
+
+.share-menu {
+  position: absolute;
+  display: none;
+  align-items: center;
+  gap: 12px;
+  background: #48556a;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  top: -50px;
+  right: 20px;
+}
+
+.share-menu span {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #ccc;
+}
+
+.share-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.author-wrapper {
+  position: relative;
+}
